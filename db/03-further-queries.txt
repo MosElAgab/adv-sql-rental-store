@@ -1,0 +1,80 @@
+You are now connected to database "flix" as user "yangzhang".
+
+ The number of films in stock for each genre:
+ genre_slug | available_movies 
+------------+------------------
+ fantasy    |                2
+ action     |                5
+ family     |                2
+ sci-fi     |                5
+ crime      |                3
+ comedy     |                3
+ drama      |                3
+(7 rows)
+
+
+ Here is the average rating for films in stock in Newcastle:
+ average_rating_newcastle 
+--------------------------
+                     6.60
+(1 row)
+
+
+ Here are all the films made in 90s with above average rating available in Leeds
+ movie_id |             title              | release_date | rating |  cost  | classification 
+----------+--------------------------------+--------------+--------+--------+----------------
+       14 | Episode I - The Phantom Menace | 1999-05-19   |      7 | 1.5750 | 
+       22 | Toy Story                      | 1995-11-19   |     10 | 1.5750 | U
+       23 | Groundhog Day                  | 1993-02-12   |      7 | 1.5750 | U
+       25 | Independance Day               | 1996-07-03   |      7 | 1.0500 | 15
+(4 rows)
+
+
+ Here is the number of copies of the top rated film of the 5 most recently released films we have in stock across all stores:
+ movie_id | number_of_copies 
+----------+------------------
+       13 |                1
+(1 row)
+
+
+ These are the locations where our customers live which dont have stores:
+ location  | number_of_customers 
+-----------+---------------------
+ Liverpool |                   1
+ Bolton    |                   2
+ Leicester |                   2
+(3 rows)
+
+
+ or 
+
+ location  
+-----------
+ Leicester
+ Bolton
+ Liverpool
+(3 rows)
+
+
+ locations we have influence over 
+ locations_under_influance 
+---------------------------
+ Leeds
+ Newcastle
+ Bolton
+ Birmingham
+ Leicester
+ Liverpool
+ Manchester
+(7 rows)
+
+
+ ...and this is the most abundant genre in that store:
+
+ all stores which exist in locations we have influance on have equal amount of stock:
+ store_id |    city    | total_stock 
+----------+------------+-------------
+        1 | Leeds      |          10
+        2 | Manchester |          10
+(2 rows)
+
