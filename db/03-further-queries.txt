@@ -69,8 +69,6 @@ You are now connected to database "flix" as user "yangzhang".
 (7 rows)
 
 
- ...and this is the most abundant genre in that store:
-
  all stores which exist in locations we have influance on have equal amount of stock:
  store_id |    city    | total_stock 
 ----------+------------+-------------
@@ -78,3 +76,5 @@ You are now connected to database "flix" as user "yangzhang".
         2 | Manchester |          10
 (2 rows)
 
+
+ ...and this is the most abundant genre in that store:

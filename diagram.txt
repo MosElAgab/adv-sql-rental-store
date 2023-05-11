@@ -1,0 +1,45 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table stock {
+  stock_id integer [primary key]
+  store_id integer
+  movie_id integer
+}
+
+Table movies_genres {
+  movie_genre_id integer [primary key]
+  movie_id integer
+  genre_id varchar
+}
+
+Table genres {
+  genre_id integer [primary key]
+  genre_slug varchar
+  genre_description text
+}
+
+TABLE stores {
+  store_id integer [primary key]
+  city varchar
+}
+
+TABLE movies {
+  movie_id integer [primary key]
+  title varchar
+  release_date integer
+  rating integer
+  cost integer
+
+}
+
+Ref: stock.movie_id <> movies_genres.movie_id
+Ref: stock.movie_id > movies.movie_id
+Ref: stock.store_id <> stores.store_id
+Ref: movies_genres.genre_id <> genres.genre_id
+
+// Ref: posts.user_id > users.id // many-to-one
+
+// Ref: users.id < follows.following_user_id
+
+// Ref: users.id < follows.followed_user_id

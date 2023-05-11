@@ -1,0 +1,8 @@
+You are now connected to database "flix" as user "yangzhang".
+
+ The store with the highest total of sequels is:
+ store_id |    city    | total_number_of_sequels 
+----------+------------+-------------------------
+        4 | Birmingham |                       9
+(1 row)
+
